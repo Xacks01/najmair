@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Najmair — Coming Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Najmair is an aviation company committed to excellence, safety, and innovation. Launching soon." />
+
+  <style>
+    :root {
+      --bg: #0b1c2d;
+      --accent: #1da1f2;
+      --text: #ffffff;
+      --muted: #9fb3c8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      background: radial-gradient(circle at top, #102a44, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 720px;
+      padding: 2rem;
+    }
+
+    .brand {
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      opacity: 0.9;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      margin: 0 0 1rem;
+      font-weight: 700;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+
+    .divider {
+      width: 80px;
+      height: 2px;
+      background: var(--accent);
+      margin: 2rem auto;
+      border-radius: 2px;
+    }
+
+    footer {
+      font-size: 0.85rem;
+      color: var(--muted);
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="brand">NAJMAIR</div>
+
+    <h1>Coming Soon</h1>
+
+    <div class="divider"></div>
+
+    <p>
+      Najmair is an aviation company dedicated to operational excellence,
+      safety, and forward-thinking aviation solutions.
+      <br />
+      We are preparing for launch.
+    </p>
+
+    <footer>
+      © <span id="year"></span> Najmair. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
