@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>NajmAir | طيران النجم — Coming Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="NajmAir | طيران النجم is an aviation company committed to excellence, safety, and innovation. Launching soon." />
+
+  <style>
+    :root {
+      /* Switched to light theme for logo visibility */
+      --bg: #f8fbfd;
+      --accent: #7c73e6;
+      /* Approximate purple from logo */
+      --text: #0b1c2d;
+      --muted: #5d707f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      /* Light gradient */
+      background: radial-gradient(circle at top, #ffffff, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 720px;
+      padding: 2rem;
+    }
+
+    /* Logo styling */
+    .logo {
+      max-width: 280px;
+      height: auto;
+      margin-bottom: 2rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      margin: 0 0 1rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+
+    .divider {
+      width: 80px;
+      height: 3px;
+      background: var(--accent);
+      margin: 2rem auto;
+      border-radius: 2px;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: var(--muted);
+      opacity: 0.9;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <!-- Replaced text brand with logo image -->
+    <img src="logo.png" alt="NajmAir | طيران النجم" class="logo">
+
+    <h1>Coming Soon</h1>
+
+    <div class="divider"></div>
+
+    <p>
+      NajmAir | طيران النجم is an aviation company dedicated to operational excellence,
+      safety, and forward-thinking aviation solutions.
+      <br />
+      We are preparing for take-off.
+    </p>
+
+    <footer>
+      © <span id="year"></span> NajmAir | طيران النجم. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
