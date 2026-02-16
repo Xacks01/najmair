@@ -1937,6 +1937,7 @@ section {
 
 /* Optimized Mobile Styles for Newsletter Form (Vertical Stack & Spacing) */
 @media (max-width: 680px) {
+
     /* Banner Adjustments */
     .newsletter-banner {
         padding: 30px 20px 0 20px;
@@ -2028,5 +2029,90 @@ section {
 @media (max-width: 480px) {
     .logo img {
         height: 45px;
+    }
+}
+
+/* --- Mobile Typography Optimizations --- */
+@media (max-width: 768px) {
+
+    /* Global Headings */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2.2rem;
+        /* Reduced from 4rem */
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    /* About Section */
+    .about-text h2 {
+        font-size: 2.2rem;
+        /* Reduced from 4.5rem */
+        line-height: 1.2;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+        /* Reduced from 1.1rem */
+    }
+
+    /* Section Headers */
+    .section-header h2 {
+        font-size: 2rem;
+        /* Reduced from 3.5rem */
+        line-height: 1.2;
+    }
+
+    .section-desc {
+        font-size: 1rem;
+    }
+
+    /* Page Hero (Sub-pages) */
+    .page-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .page-hero p {
+        font-size: 1rem;
+    }
+
+    /* Newsletter */
+    .newsletter-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .newsletter-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Service Cards */
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+    }
+
+    /* Fleet Section */
+    .fleet-info h3 {
+        font-size: 1.2rem;
     }
 }
